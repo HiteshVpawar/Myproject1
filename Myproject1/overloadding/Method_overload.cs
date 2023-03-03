@@ -34,3 +34,4 @@ namespace Myproject1
         }
     }
 }
+//parameter always time of promotion
