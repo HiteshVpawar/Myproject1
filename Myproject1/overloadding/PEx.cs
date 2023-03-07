@@ -37,7 +37,39 @@ namespace Myproject1.overloadding
     {
         static void Main(string[] args)
         {
-
+            char c;
+            Console.WriteLine("enter the a and b");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+           
+            do
+            {
+                Console.WriteLine("selsect the operator");
+                Console.WriteLine("+\t -\t *\t %\t");
+                char op = Convert.ToChar(Console.ReadLine());
+                switch (op)
+                { 
+                      
+                    case '+':
+                            Console.WriteLine("addition of a+b ="+(a+b));
+                            break;
+                    case '-':
+                        Console.WriteLine("addition of a+b =" + (a + b));
+                        break;
+                    case '/':
+                        Console.WriteLine("addition of a+b =" + (a + b));
+                        break;
+                    case '%':
+                        Console.WriteLine("addition of a+b =" + (a + b));
+                        break;
+                    default:
+                        Console.WriteLine("enter the correct choice");
+                        break;
+                }
+                Console.WriteLine("if you want to continue....");
+                c = Convert.ToChar(Console.ReadLine());
+            }
+            while (c == 'y' || c == 'Y');
         }
     }
 }

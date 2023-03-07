@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace Myproject1.Inheritence
 {
-    class Engineer
+    class Engineering
     {
         public int PassoutYear = 2022;
     }
-    class Civil:Engineer
+    class Civil:Engineering
     {
        public void Show()
         {
             Console.WriteLine("civil engg passout in "+PassoutYear);
         }
     }
-    class Mechanical:Engineer
+    class Mechanical:Engineering
     {
         public void Show()
         {
             Console.WriteLine("mechanical engg passout in " + PassoutYear);
         }
     }
-    class Computer:Engineer
+    class Computer:Engineering
     {
         public void Show()
         {
